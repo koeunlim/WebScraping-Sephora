@@ -57,13 +57,25 @@ name of the column|description|break down|
 Total number of scraped data with Ratings of 4 or 5: 176958<br>
 Total number of unique author IDs: 127859<br>
 Total number of unique reviewer Nicknames: 125759<br>
+Total number of unique foundation products: 191<br>
+Total number of unique lipcolor products: 230<br>
+Total number of unique foundation shades: 3689<br>
+Total number of unique lipcolor shades: 3083<br>
 
 
 ### Source
 Product data were gathered from [Sephora](https://www.sephora.com/)<br>
-Product review data were gathered from [Bazaarvoice](https://api.bazaarvoice.com)
+Product review data were gathered from [Bazaarvoice](https://api.bazaarvoice.com)<br>
 
 ## Data Visualization
-
+Github repository [Github-Repository](https://github.com/koeunlim/WebScraping-Sephora/blob/master/03_Sephora_EDA.ipynb)
 
 ## Conclusion
+To my surprise, there are more foundation shades than lipstick shades!
+
+As for the rewiwer's distribution, people with darker skintones (Group 1) make up less than 10% (9.7% to be exact) of the sampled reviewers, indicating potential expansion of customers. 
+
+Exploratory data analysis suggests that self-reported skintone show monotonic relationship with the foundation luminosity and lipstick luminosity. For foundation makeup, RGB color distribution showed distinct patterns for each of the self-reported skintones except for tan and olive, which were indistinguishable. In terms of lipstick RGB color distribution, skintones can be divided into two groups (Group 1: ebony, dark, deep; Group 2: porcelain, fair, light, medium, tan, olive). Group 1 purchased red shifted colors with less blue and green colors, while Group 2 purchased more lighter and neutral (stronger green and blue components) colors.
+However, self-reported haircolor and eyeclor do not show significant relationship with foundation color spectrum or luminosity.
+
+Contrary to the general belief that categorized eyecolor and haircolor help finding matching lipstick shades, on average these two color features did not have any predictive power on the purchased and liked lipstick shades. These results may help in formatting reviewer's responses to provide better information to the new customers or generating suggestions for the future purchases. 
