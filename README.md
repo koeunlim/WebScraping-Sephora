@@ -15,9 +15,9 @@ NYCDSA web scraping project
 ```
 .
 ├── WebScraping-Sephora
-    ├── 00_Sephora_getProductURLs.ipynb
-    ├── 01_Sephora_getReviews.ipynb
-    ├── 02_Sephora_EDA.ipynb
+    ├── 01_Sephora_getProductURLs.ipynb
+    ├── 02_Sephora_getReviews.ipynb
+    ├── 03_Sephora_EDA.ipynb
     ├── data
         ├── product_urls.csv
         ├── product_info0.csv
@@ -30,7 +30,11 @@ NYCDSA web scraping project
 
 
 ## Project Description
+When choosing color makeups such as lipsticks, natural colors that individuals possess such as skin tone, hair color, and eye color contribute. In some cases, hair and eye colors characterize an individual's dominant color templates due to genentics. For instance, people with suppressed melanin production express blue eyes and blonde hair with relatively fair skin. However, in some cases where hair and eye colors are different spectrums of brown due to increased melanin production, skin "undertone" may contribute more in determining the dominant "wearable" colors. While some attention is given to the lightness/darkness of the skin tone as Sephora provides skintone category input option (9 levels from porcelain to ebony) to the reviewers, it is upto the customer to determine which hue (ie. "yellow", "pink", or "olive" undertone) the best matching shade of the foundation has. It becomes even more complicated when choosing lip or eye color makeups because there are no two pink lipsticks that are the same! Wouldn't it be wonderful if you can determine which shade of foundation (depending on the brand) is the best fit as well as whether this particular color of lipstick would look good on you or not based on your purchase and review history?
 
+As the first step, the goal of this project is to explore the color spectrum of the foundations and lipsticks given reviewer's dominant colors (hair color, eye color, and skin tone from Sephora's reviewer inputs) to see if particular features are strongly correlated between the purchased and liked foundation and lipstick colors.
+
+Since sephora.com runs heavily on dynamic API components, product URLs were first collected from Sephora using Selenium instead of Scrapy. Then product information needed to pull review JSON from Bazaarvoice were collected from the product page using selenium. 
 
 ## Data Description
 name of the column|description|break down|
@@ -50,10 +54,13 @@ name of the column|description|break down|
 |G|green scalar from the swatch's RGB|0~255||
 |B|blue scalar from the swatch's RGB|0~255||
 
+Total number of scraped data with Ratings of 4 or 5: 176958<br>
+Total number of unique author IDs: 127859<br>
+Total number of unique reviewer Nicknames: 125759<br>
 
 
 ### Source
-Product data were gathered from [Sephora](https://www.sephora.com/)
+Product data were gathered from [Sephora](https://www.sephora.com/)<br>
 Product review data were gathered from [Bazaarvoice](https://api.bazaarvoice.com)
 
 ## Data Visualization
