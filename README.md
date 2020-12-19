@@ -78,6 +78,10 @@ Product review data were gathered from [Bazaarvoice](https://api.bazaarvoice.com
 <img src="./figures/Pie_lipstick_skintone.png">
 <img src="./figures/Box_foundation_skintone.png">
 <img src="./figures/Box_lipstick_skintone.png">
+Foundation RBG by Skintone<br>
+<img src="./figures/Pair_skintone_foundation.png">
+Lipstick RGB by Skintone<br>
+<img src="./figures/Pair_skintone_lipstick.png">
 <img src="./figures/LM_R_skintone.png">
 <img src="./figures/LM_G_skintone.png">
 <img src="./figures/LM_B_skintone.png">
