@@ -37,6 +37,7 @@ As the first step, the goal of this project is to explore the color spectrum of 
 
 Since sephora.com runs heavily on dynamic API components, product URLs were first collected from Sephora using Selenium instead of Scrapy. Then product information needed to pull review JSON from Bazaarvoice were collected from the product page using selenium. 
 
+
 ## Data Description
 name of the column|description|break down|
 |---|---|---|
@@ -68,8 +69,19 @@ Total number of unique lipcolor shades: 3083<br>
 Product data were gathered from [Sephora](https://www.sephora.com/)<br>
 Product review data were gathered from [Bazaarvoice](https://api.bazaarvoice.com)<br>
 
+
 ## Data Visualization
 <img src="./figures/Pie_all_skintone.png">
+<img src="./figures/Scatter3d_all_foundation.png">
+<img src="./figures/Scatter3d_all_lipstick.png">
+<img src="./figures/Pie_foundation_skintone.png">
+<img src="./figures/Pie_lipstick_skintone.png">
+<img src="./figures/Box_foundation_skintone.png">
+<img src="./figures/Box_lipstick_skintone.png">
+<img src="./figures/LM_R_skintone.png">
+<img src="./figures/LM_G_skintone.png">
+<img src="./figures/LM_B_skintone.png">
+
 
 ## Conclusion
 To my surprise, there are more foundation shades than lipstick shades!
@@ -79,4 +91,6 @@ As for the rewiwer's distribution, people with darker skintones (Group 1) make u
 Exploratory data analysis suggests that self-reported skintone show monotonic relationship with the foundation luminosity and lipstick luminosity. For foundation makeup, RGB color distribution showed distinct patterns for each of the self-reported skintones except for tan and olive, which were indistinguishable. In terms of lipstick RGB color distribution, skintones can be divided into two groups (Group 1: ebony, dark, deep; Group 2: porcelain, fair, light, medium, tan, olive). Group 1 purchased red shifted colors with less blue and green colors, while Group 2 purchased more lighter and neutral (stronger green and blue components) colors.
 However, self-reported haircolor and eyeclor do not show significant relationship with foundation color spectrum or luminosity.
 
-Contrary to the general belief that categorized eyecolor and haircolor help finding matching lipstick shades, on average these two color features did not have any predictive power on the purchased and liked lipstick shades. These results may help in formatting reviewer's responses to provide better information to the new customers or generating suggestions for the future purchases. - Still updating.
+Pairplots of R, G, B by each self-reporting categories (skintone, haircolor, eyecolor) showed that there are systematic shifts in RGB distribution depending on skintone, which becomes less visible when grouped by haircolor and eyecolor.
+
+Contrary to the general belief that categorized eyecolor and haircolor help finding matching lipstick shades, on average these two color features did not have any predictive power on the purchased and liked lipstick shades. These results may help in formatting reviewer's responses to provide better information to the new customers or generating suggestions for the future purchases. 
