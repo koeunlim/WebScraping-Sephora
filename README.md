@@ -18,6 +18,7 @@ NYCDSA web scraping project
     ├── 01_Sephora_getProductURLs.ipynb
     ├── 02_Sephora_getReviews.ipynb
     ├── 03_Sephora_EDA.ipynb
+    ├── 04_Sephora_Stats.ipynb
     ├── data
         ├── product_urls.csv
         ├── product_info0.csv
@@ -68,7 +69,7 @@ Product data were gathered from [Sephora](https://www.sephora.com/)<br>
 Product review data were gathered from [Bazaarvoice](https://api.bazaarvoice.com)<br>
 
 ## Data Visualization
-Github repository [Github-Repository](https://github.com/koeunlim/WebScraping-Sephora/blob/master/03_Sephora_EDA.ipynb)
+<img src="./figures/Pie_all_skintone.eps">
 
 ## Conclusion
 To my surprise, there are more foundation shades than lipstick shades!
@@ -78,4 +79,4 @@ As for the rewiwer's distribution, people with darker skintones (Group 1) make u
 Exploratory data analysis suggests that self-reported skintone show monotonic relationship with the foundation luminosity and lipstick luminosity. For foundation makeup, RGB color distribution showed distinct patterns for each of the self-reported skintones except for tan and olive, which were indistinguishable. In terms of lipstick RGB color distribution, skintones can be divided into two groups (Group 1: ebony, dark, deep; Group 2: porcelain, fair, light, medium, tan, olive). Group 1 purchased red shifted colors with less blue and green colors, while Group 2 purchased more lighter and neutral (stronger green and blue components) colors.
 However, self-reported haircolor and eyeclor do not show significant relationship with foundation color spectrum or luminosity.
 
-Contrary to the general belief that categorized eyecolor and haircolor help finding matching lipstick shades, on average these two color features did not have any predictive power on the purchased and liked lipstick shades. These results may help in formatting reviewer's responses to provide better information to the new customers or generating suggestions for the future purchases. 
+Contrary to the general belief that categorized eyecolor and haircolor help finding matching lipstick shades, on average these two color features did not have any predictive power on the purchased and liked lipstick shades. These results may help in formatting reviewer's responses to provide better information to the new customers or generating suggestions for the future purchases. - Still updating.
