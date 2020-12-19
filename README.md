@@ -69,7 +69,7 @@ Product data were gathered from [Sephora](https://www.sephora.com/)<br>
 Product review data were gathered from [Bazaarvoice](https://api.bazaarvoice.com)<br>
 
 ## Data Visualization
-<img src="./figures/Pie_all_skintone.eps">
+<img src="./figures/Pie_all_skintone.png">
 
 ## Conclusion
 To my surprise, there are more foundation shades than lipstick shades!
