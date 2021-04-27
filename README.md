@@ -1,5 +1,5 @@
 # WebScraping-Sephora
-NYCDSA web scraping project
+Quantiative approach to finding a perfect shade of lipsticks for everyone.
 
 
 ## Table of Contents
