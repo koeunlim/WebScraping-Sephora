@@ -1,5 +1,5 @@
 # WebScraping-Sephora
-Quantiative approach to finding a perfect shade of lipsticks for everyone.
+Quantiative approach to finding perfect shades of lipsticks for everyone.
 
 
 ## Table of Contents
